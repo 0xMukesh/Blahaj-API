@@ -24,8 +24,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 
-const port = process.env.PORT || 80
-
 app.get('/', (req, res) => {
     res.send('🦈 BLAHAJ API!')
 })
@@ -43,6 +41,7 @@ app.post('/post', (req, res) => {
         res.json(image)
     })
 })
+
 app.get('/get', (req, res) => {
     model.find((err, images) => {
         if (err) {
@@ -53,6 +52,8 @@ app.get('/get', (req, res) => {
         }
     })
 })
+
+const port = process.env.PORT || 3000
 
 app.listen(port, async () => {
     console.log(`Server is online at ${port} port`);
