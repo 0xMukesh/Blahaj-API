@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(router);
 
-const port = 3000 || process.env.PORT
+const port = process.env.PORT || 80
 
 app.get('/', (req, res) => {
     res.send('🦈 BLAHAJ API!')
