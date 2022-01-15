@@ -9,6 +9,8 @@ const {
     getImages,
     postImages
 } = require("./controllers/controllers.js")
+const model = require("../model/model.js");
+const randomObject = require('../utils/randomObject.js')
 
 const app = express();
 
@@ -32,8 +34,30 @@ app.get('/', (req, res) => {
     res.send('🦈 BLAHAJ API!')
 })
 
-app.post('/post', postImages)
-app.get('/get', getImages)
+app.post('/post', (req, res) => {
+    const image = new model({
+        name: req.body.name,
+        url: req.body.url
+    })
+
+    image.save((err, image) => {
+        if (err) {
+            res.send(err)
+        }
+        res.json(image)
+    })
+})
+
+app.get('/get', (req, res) => {
+    model.find((err, images) => {
+        if (err) {
+            res.send(err)
+        }
+        else {
+            res.json(randomObject(images))
+        }
+    })
+})
 
 app.listen(port, async () => {
     console.log(`Server is online at ${port} port`);
