@@ -6,6 +6,10 @@ const dotenv = require("dotenv")
 dotenv.config()
 
 const router = require("./routes/router.js");
+const {
+    getImages,
+    postImages
+} = require("./controllers/controllers.js")
 
 const app = express();
 
@@ -22,13 +26,14 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use(router);
-
 const port = process.env.PORT || 80
 
 app.get('/', (req, res) => {
     res.send('🦈 BLAHAJ API!')
 })
+
+app.post('/post', postImages)
+app.get('/get', getImages)
 
 app.listen(port, async () => {
     console.log(`Server is online at ${port} port`);
