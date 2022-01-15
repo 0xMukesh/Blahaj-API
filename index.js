@@ -5,8 +5,8 @@ const dotenv = require("dotenv")
 
 dotenv.config()
 
-const model = require("../model/model.js");
-const randomObject = require('../utils/randomObject.js')
+const model = require("./model/model.js");
+const randomObject = require('./utils/randomObject.js')
 
 const app = express();
 
