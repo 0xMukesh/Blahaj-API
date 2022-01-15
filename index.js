@@ -5,10 +5,6 @@ const dotenv = require("dotenv")
 
 dotenv.config()
 
-const {
-    getImages,
-    postImages
-} = require("./controllers/controllers.js")
 const model = require("../model/model.js");
 const randomObject = require('../utils/randomObject.js')
 
@@ -47,7 +43,6 @@ app.post('/post', (req, res) => {
         res.json(image)
     })
 })
-
 app.get('/get', (req, res) => {
     model.find((err, images) => {
         if (err) {
