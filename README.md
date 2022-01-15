@@ -5,6 +5,12 @@ An API for getting and posting random Blahaj images
 
 Check out the website: [Blahaj API](https://blahaj-api.herokuapp.com/)
 
+## 👨‍💻 Available endpoints
+
+- `/`: The root route
+- `/get`: The route for getting random blahaj images
+- `/post`: The route for posting random blahaj images
+
 ## 👇 Prerequisites
 
 Before starting working on this project, please make sure you have already installed the following tools:
@@ -31,3 +37,7 @@ Alternatively, skip all the steps by using [![Gitpod Ready-to-Code](https://img.
 ## 👨‍💻 Contributing
 
 All kinds of contributions are always welcomed. It is recommended to either tell the maintainers that you are working on a previously made issue or make a new issue and let the maintainers now that you are working on it.
+
+## 🤔 What's next for Blahaj API ?
+
+- I'll be adding a route where you could get the raw random images of blahaj
