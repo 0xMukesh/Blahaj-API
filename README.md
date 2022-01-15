@@ -5,7 +5,7 @@ An API for getting and posting random Blahaj images
 
 Check out the website: [Blahaj API](https://blahaj-api.herokuapp.com/)
 
-## 👨‍💻 Available endpoints
+## 🛣️ Available endpoints
 
 - `/`: The root route
 - `/get`: The route for getting random blahaj images
