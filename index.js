@@ -26,6 +26,10 @@ app.use(router);
 
 const port = 3000 || process.env.PORT
 
+app.get('/', (req, res) => {
+    res.send('🦈 BLAHAJ API!')
+})
+
 app.listen(port, async () => {
     console.log(`Server is online at ${port} port`);
 });
