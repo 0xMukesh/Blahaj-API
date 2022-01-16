@@ -32,7 +32,7 @@ Before starting working on this project, please make sure you have already insta
 5. Create your [own MongoDB database](https://www.mongodb.com/basics/create-database) for testing
 6. Run `npm start` to start a local development environment
 
-Alternatively, skip all the steps by using [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/ASEAN-Build-The-Earth/ASEAN-API-V2)
+
 
 ## 👨‍💻 Contributing
 
@@ -41,3 +41,4 @@ All kinds of contributions are always welcomed. It is recommended to either tell
 ## 🤔 What's next for Blahaj API ?
 
 - I'll be adding a route where you could get the raw random images of blahaj
+- Make a cool looking homepage
