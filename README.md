@@ -11,6 +11,17 @@ Check out the website: [Blahaj API](https://blahaj-api.herokuapp.com/)
 - `/get`: The route for getting random blahaj images
 - `/post`: The route for posting random blahaj images
 
+### 🤔 How to post via the `/post` route ?
+
+Blahaj API doesn't support posting via queries. To use the POST method you have to add body to the request. The body needs to have `name` and `url` path. 
+
+- `name` : It's a short description of what's the image is about
+- `url` : It's the link of the image
+
+Here's an example 👇
+
+![](https://imgur.com/CGTREJx.png)
+
 ## 👇 Prerequisites
 
 Before starting working on this project, please make sure you have already installed the following tools:
