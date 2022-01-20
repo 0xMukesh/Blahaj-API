@@ -12,6 +12,17 @@ const getImages = (req, res) => {
     })
 }
 
+const getRawImages = (req, res) => {
+    model.find((err, images) => {
+        if (err) {
+            res.err(err)
+        }
+        else {
+            res.redirect(randomObject(images)["url"])
+        }
+    })
+}
+
 const postImages = (req, res) => {
     const image = new model({
         name: req.body.name,
@@ -28,5 +39,6 @@ const postImages = (req, res) => {
 
 module.exports = {
     getImages,
-    postImages
+    postImages,
+    getRawImages
 }

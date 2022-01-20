@@ -1,5 +1,6 @@
 # 🦈 Blahaj API
-An API for getting and posting random Blahaj images 
+
+An API for getting and posting random Blahaj images
 
 ## 👨‍💻 Demo
 
@@ -10,10 +11,11 @@ Check out the website: [Blahaj API](https://blahaj-api.herokuapp.com/)
 - `/`: The root route
 - `/get`: The route for getting random blahaj images
 - `/post`: The route for posting random blahaj images
+- `/raw`: The route for getting raw random blahaj images
 
 ### 🤔 How to post via the `/post` route ?
 
-Blahaj API doesn't support posting via queries. To use the POST method you have to add body to the request. The body needs to have `name` and `url` path. 
+Blahaj API doesn't support posting via queries. To use the POST method you have to add body to the request. The body needs to have `name` and `url` path.
 
 - `name` : It's a short description of what's the image is about
 - `url` : It's the link of the image
@@ -38,12 +40,11 @@ Before starting working on this project, please make sure you have already insta
    ```bash
    $ git clone https://github.com/Kira272921/Blahaj-API
    ```
+
 3. Navigate to the project directory `cd Blahaj-API`
 4. Install dependencies with `npm install`
 5. Create your [own MongoDB database](https://www.mongodb.com/basics/create-database) for testing
 6. Run `npm start` to start a local development environment
-
-
 
 ## 👨‍💻 Contributing
 
